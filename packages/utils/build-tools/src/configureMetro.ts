@@ -102,6 +102,9 @@ export async function configureMetro(optionsToMerge?: object) {
         }
       })
     },
+    server: {
+      port: 8081
+    },
     resetCache: false
   };
 

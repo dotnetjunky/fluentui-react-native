@@ -158,6 +158,8 @@ async function runMetroDirect(
   configName = fs.existsSync(path.join(process.cwd(), configName)) ? configName : 'metro.config.js';
   const configBase = await Metro.loadConfig({ config: configName });
 
+  port = port || 8081;
+
   // add platform specific details for bundling this config
   const config = addPlatformMetroConfig(platform, configBase) as any;
   if (server) {

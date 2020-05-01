@@ -3,12 +3,12 @@ import { Callout } from '@fluentui-react-native/callout';
 
 export interface IColorPickerProps {
   target?: React.RefObject<React.Component>;
-  initialColors?: IColorPickerColor;
+  initialColors?: string;
   onColorSelected?: (color: string) => void;
 }
 
 export const ColorPicker: React.FunctionComponent<IColorPickerProps> = (props: IColorPickerProps) => {
-  const { target, initialColors, onColorSelected } = props;
+  const { target } = props;
 
   return <Callout target={target} />;
 };

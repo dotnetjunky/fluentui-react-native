@@ -15,7 +15,7 @@
     "clean": "fluentui-scripts clean",
     "code-style": "fluentui-scripts code-style",
     "lint": "fluentui-scripts eslint",
-    "start": "fluentui-scripts metro --server",
+    "start": "fluentui-scripts metro --server --platform win32",
     "bundle": "fluentui-scripts metro --platform win32",
     "bundle-dev": "fluentui-scripts metro -platform win32 --dev",
     "run-win32": "rex-win32 --bundle RNTester --component RNTesterApp --windowTitle \"FluentUI Tester\" --basePath ./dist --pluginProps",
